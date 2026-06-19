@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adarsh Mohan — Product Designer</title>
+  <script>document.documentElement.classList.add('js');</script>
+
+  <meta name="description" content="Adarsh Mohan — product designer building AI work tools at Voicenotes, previously Buy Me a Coffee (YC W19). Designing 0-to-1 products across iOS, macOS, and web.">
+  <meta name="author" content="Adarsh Mohan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://adarshmohanks.com/">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" as="image" href="Images/Adarsh.png" type="image/png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Adarsh Mohan">
+  <meta property="og:title" content="Adarsh Mohan — Product Designer">
+  <meta property="og:description" content="Building AI work tools at Voicenotes, previously Buy Me a Coffee (YC W19). Designing 0-to-1 products across iOS, macOS, and web.">
+  <meta property="og:url" content="https://adarshmohanks.com/">
+  <meta property="og:image" content="https://adarshmohanks.com/Images/og-image.png">
+  <meta property="og:image:width" content="2400">
+  <meta property="og:image:height" content="1260">
+  <meta property="og:image:alt" content="Adarsh Mohan — Product Designer">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adarsh Mohan — Product Designer">
+  <meta name="twitter:description" content="Building AI work tools at Voicenotes, previously Buy Me a Coffee (YC W19). Designing 0-to-1 products across iOS, macOS, and web.">
+  <meta name="twitter:image" content="https://adarshmohanks.com/Images/og-image.png">
+  <meta name="twitter:image:alt" content="Adarsh Mohan — Product Designer">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #0d0d0d;
+      --muted: rgba(13, 13, 13, 0.7);
+      --indent: 34px;
+      --body-size: 15px;
+      --body-line: 22.2px;
+      --body-track: -0.2344px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; }
+
+    body {
+      background: #ffffff;
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+      font-size: var(--body-size);
+      line-height: var(--body-line);
+      letter-spacing: var(--body-track);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      transition: opacity 0.4s ease;
+    }
+
+    html.js body { opacity: 0; }
+    html.js.fonts-ready body { opacity: 1; }
+
+    p { margin: 0; }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-thickness: from-font;
+      text-underline-offset: 1px;
+    }
+    a[data-hover-text] {
+      position: relative;
+    }
+    a[data-hover-text]::after {
+      content: attr(data-hover-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: var(--link-hover-color, var(--ink));
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      letter-spacing: -0.47px;
+      line-height: inherit;
+      text-decoration: underline;
+      text-decoration-thickness: from-font;
+      text-underline-offset: 1px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+    }
+    a[data-hover-text]:hover {
+      color: transparent;
+      text-decoration-color: transparent;
+    }
+    a[data-hover-text]:hover::after {
+      opacity: 1;
+    }
+    a:focus-visible {
+      outline: 1.5px solid var(--ink);
+      outline-offset: 2px;
+    }
+
+    .page {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 36px 40px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 540px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .avatar {
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+    }
+
+    .indent  { padding-left: var(--indent); }
+    .indent2 { padding-left: 68px; }
+    .muted   { color: var(--muted); }
+    .italic  { font-style: italic; }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bio p + p { margin-top: var(--body-line); }
+
+    .row {
+      display: flex;
+      align-items: flex-start;
+    }
+    .marker {
+      flex: 0 0 var(--indent);
+      color: var(--muted);
+    }
+    .rowbody {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sep {
+      color: inherit;
+      margin: 0 0.4em;
+    }
+
+    .yc-badge-link {
+      display: inline-block;
+      line-height: 0;
+      vertical-align: -2px;
+      margin-right: 3px;
+      text-decoration: none;
+    }
+    .yc-badge-link:focus-visible {
+      outline: 1.5px solid var(--ink);
+      outline-offset: 2px;
+      border-radius: 3px;
+    }
+    .yc-badge {
+      display: block;
+      width: 14px;
+      height: 14px;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      font-size: var(--body-size);
+      line-height: var(--body-line);
+      letter-spacing: var(--body-track);
+      color: var(--muted);
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(245, 245, 245, 0.9);
+      -webkit-backdrop-filter: blur(1px);
+      backdrop-filter: blur(1px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.22s ease, visibility 0s linear 0.22s;
+    }
+    .overlay.open {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.22s ease, visibility 0s;
+    }
+
+    .modal {
+      width: 480px;
+      max-width: 100%;
+      max-height: calc(100dvh - 48px);
+      overflow-y: auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.10);
+      transform: translateY(8px) scale(0.985);
+      opacity: 0;
+      transition: transform 0.22s ease, opacity 0.22s ease;
+    }
+    .overlay.open .modal {
+      transform: none;
+      opacity: 1;
+    }
+
+    .modal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .modal-head .title { color: #000; }
+    .modal-close {
+      appearance: none;
+      border: 0;
+      background: none;
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 22.2px;
+      color: #000;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .modal-close:focus-visible {
+      outline: 1.5px solid var(--ink);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .proj {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .proj-name { color: #151515; }
+    .proj-meta {
+      flex: none;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        align-items: flex-start;
+        padding: 40px 36px;
+      }
+      .modal { padding: 28px 24px; }
+      .proj {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      body { transition: none; }
+      .overlay,
+      .overlay .modal { transition: opacity 0.001s; }
+      .overlay .modal { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main class="card">
+
+      <header class="intro">
+        <img class="avatar" width="24" height="24" src="Images/Adarsh.png" alt="Adarsh Mohan" loading="eager" decoding="async">
+        <div class="stack">
+          <p>Adarsh Mohan</p>
+          <p>Product Designer <span class="sep">·</span> UTC +5:30</p>
+        </div>
+      </header>
+
+      <div class="stack">
+        <p class="indent">Building AI work tools at <a href="https://voicenotes.com/" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes (opens in a new tab)">Voicenotes</a>.</p>
+        <p class="indent">Previously at <a href="https://buymeacoffee.com/" target="_blank" rel="noopener noreferrer" aria-label="Buy Me a Coffee (opens in a new tab)">Buy Me a Coffee</a> (<a class="yc-badge-link" href="https://www.ycombinator.com/" target="_blank" rel="noopener noreferrer" aria-label="Y Combinator (opens in a new tab)"><svg class="yc-badge" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M47.9985 47.9994H0V0H47.9985V47.9994Z" fill="#FF6600"/><path d="M13.9012 11.7843H17.6595L22.4961 21.5325C23.203 22.9836 23.7984 24.3976 23.7984 24.3976C23.7984 24.3976 24.4313 23.021 25.175 21.5325L30.0868 11.7843H33.5843L25.2865 27.3746V37.309H22.1244V27.1884L13.9012 11.7843Z" fill="white"/></svg></a> W19).</p>
+      </div>
+
+      <div class="indent bio">
+        <p>I design AI-powered products from 0&rarr;1 across iOS, macOS, and web. At Voicenotes, an AI voice and meeting-notes app used by 800k+ people, I shipped the v1 of the iOS app, then built the Mac app from scratch and now lead design across the Mac app, web app, landing pages, and brand. Along the way Voicenotes won a Product Hunt Golden Kitty Award and was featured in Apple's top productivity apps and on Stripe's Black Friday site.</p>
+        <p>At its sister company Buy Me a Coffee, I redesigned the core monetisation flows &mdash; membership, payment modal &mdash; for a platform that processed 2.41M payments and paid 50k+ creators in 2025, up 12% and 17% year over year.</p>
+        <p>Last year I shipped 31 projects across 9 apps and 4 platforms. I love working shoulder to shoulder with founders, prototyping interaction patterns fast (often with AI tools like Claude), and sweating the typography, motion, and detail that make software feel great.</p>
+      </div>
+
+      <section class="stack">
+        <div class="row"><span class="marker">&mdash;</span><span>Projects</span></div>
+        <p class="indent"><a href="https://www.reddit.com/r/Voicenotesai/comments/1tusew7/introducing_voicenotes_20_for_mac_meetings/?sort=confidence" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes Mac App, macOS 26 (opens in a new tab)">Voicenotes Mac App (macOS 26)</a></p>
+        <p class="indent2 muted italic">Top user comment: &ldquo;Finally!!! Now I can quit Granola definitely &#128077;&#127998;&rdquo;</p>
+        <p class="indent"><a href="https://apps.apple.com/us/app/voicenotes-ai-notes-meetings/id6483293628" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes iOS App, iOS 26 (opens in a new tab)">Voicenotes iOS App (iOS 26)</a></p>
+        <p class="indent"><a href="#" id="open-projects">Other Projects</a></p>
+      </section>
+
+      <div class="row">
+        <span class="marker">&mdash;</span>
+        <div class="rowbody">
+          <p>Contact</p>
+          <p><a href="mailto:adarshmohanks@gmail.com">Email</a> <span class="sep">·</span> <a href="https://wa.me/919207282556" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (opens in a new tab)">WhatsApp</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <span class="marker">&mdash;</span>
+        <div class="rowbody">
+          <p>Links</p>
+          <p><a href="https://drive.google.com/file/d/1L--RVkETH8QjE7y2bkIddOVYnOz_Atgj/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="CV (opens in a new tab)">CV</a> <span class="sep">·</span> <a href="https://www.linkedin.com/in/adarshmohanks/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">LinkedIn</a> <span class="sep">·</span> <a href="https://adarshmohanks.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="First portfolio, 2024 (opens in a new tab)">First portfolio (2024)</a></p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Published June 19, 2026</p>
+        <p>Built in one evening with Claude Code.</p>
+        <p>Case studies for the iOS and macOS work are coming soon. I&rsquo;ve been busy shipping.</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <div class="overlay" id="projects-overlay" role="dialog" aria-modal="true" aria-labelledby="projects-title" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-head">
+        <p class="title" id="projects-title">Other projects</p>
+        <button class="modal-close" type="button" aria-label="Close">X</button>
+      </div>
+      <div class="proj"><span class="proj-name"><a href="https://voicenotes.com/" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes landing page, temporary version (opens in a new tab)">Voicenotes landing page (temporary version)</a></span><span class="proj-meta">Voicenotes <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name">Membership free trial experience</span><span class="proj-meta">Buy Me a Coffee <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name">Membership creation page redesign</span><span class="proj-meta">Buy Me a Coffee <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name">Membership payment modal redesign</span><span class="proj-meta">Buy Me a Coffee <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name">Notifications system</span><span class="proj-meta">Buy Me a Coffee <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name">Stream alerts (2.0)</span><span class="proj-meta">Buy Me a Coffee <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name">Messaging experience redesign</span><span class="proj-meta">Buy Me a Coffee <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name">Post editor UX improvements</span><span class="proj-meta">Buy Me a Coffee <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name"><a href="https://buymeacoffee.com/patreon-alternative" target="_blank" rel="noopener noreferrer" aria-label="Patreon alternative landing page (opens in a new tab)">Patreon alternative landing page</a></span><span class="proj-meta">Buy Me a Coffee <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name"><a href="https://bio.link/" target="_blank" rel="noopener noreferrer" aria-label="Bio link landing page (opens in a new tab)">Bio link landing page</a></span><span class="proj-meta">Bio Link <span class="sep">·</span> Live</span></div>
+      <div class="proj"><span class="proj-name">SaveSpace</span><span class="proj-meta">iOS App <span class="sep">·</span> Test Flight</span></div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const overlay  = document.getElementById('projects-overlay');
+      const openBtn  = document.getElementById('open-projects');
+      const modal    = overlay.querySelector('.modal');
+      const closeBtn = overlay.querySelector('.modal-close');
+
+      const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+      document.querySelectorAll('a:not(.yc-badge-link)').forEach(function (link) {
+        link.dataset.hoverText = link.textContent.trim();
+        link.style.setProperty('--link-hover-color', window.getComputedStyle(link).color);
+      });
+
+      function openOverlay(event) {
+        if (event) event.preventDefault();
+        overlay.classList.add('open');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+      }
+
+      function closeOverlay() {
+        overlay.classList.remove('open');
+        overlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        openBtn.focus();
+      }
+
+      function trapFocus(event) {
+        const items = modal.querySelectorAll(FOCUSABLE);
+        if (!items.length) return;
+        const first = items[0];
+        const last = items[items.length - 1];
+
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+
+      openBtn.addEventListener('click', openOverlay);
+      closeBtn.addEventListener('click', closeOverlay);
+
+      overlay.addEventListener('click', function (event) {
+        if (event.target === overlay) closeOverlay();
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (!overlay.classList.contains('open')) return;
+        if (event.key === 'Escape') {
+          closeOverlay();
+        } else if (event.key === 'Tab') {
+          trapFocus(event);
+        }
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      function reveal() { document.documentElement.classList.add('fonts-ready'); }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(reveal);
+        setTimeout(reveal, 1500);
+      } else {
+        reveal();
+      }
+    })();
+  </script>
+</body>
+</html>
