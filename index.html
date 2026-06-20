@@ -113,7 +113,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 36px 40px;
+      padding: 100px 40px;
     }
 
     .card {
@@ -148,6 +148,67 @@
     }
 
     .bio p + p { margin-top: var(--body-line); }
+
+    .projects-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .projects-body {
+      padding-left: var(--indent);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .projects-grid {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .project-col {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .project-img {
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      background: rgba(13, 13, 13, 0.04);
+    }
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .project-img-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+    .project-img-link img { transition: opacity 0.2s ease; }
+    .project-img-link:hover img { opacity: 0.88; }
+    .project-img-link:focus-visible {
+      outline: 1.5px solid var(--ink);
+      outline-offset: 2px;
+    }
+    .project-text {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .project-quote {
+      margin: 0;
+      padding-left: 12px;
+      border-left: 1.5px solid rgba(13, 13, 13, 0.2);
+      font-style: italic;
+      color: var(--muted);
+    }
+    .project-quote .quote-label { color: var(--ink); }
 
     .row {
       display: flex;
@@ -188,9 +249,9 @@
     .footer {
       display: flex;
       flex-direction: column;
-      font-size: var(--body-size);
-      line-height: var(--body-line);
-      letter-spacing: var(--body-track);
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.0645px;
       color: var(--muted);
     }
 
@@ -280,13 +341,18 @@
     @media (max-width: 640px) {
       .page {
         align-items: flex-start;
-        padding: 40px 36px;
+        padding: 64px 24px;
       }
       .modal { padding: 28px 24px; }
       .proj {
         flex-direction: column;
         gap: 0;
       }
+      .projects-grid {
+        flex-direction: column;
+        gap: 28px;
+      }
+      .projects-body { padding-left: var(--indent); }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -305,7 +371,7 @@
         <img class="avatar" width="24" height="24" src="Images/Adarsh.png" alt="Adarsh Mohan" loading="eager" decoding="async">
         <div class="stack">
           <p>Adarsh Mohan</p>
-          <p>Product Designer <span class="sep">·</span> UTC +5:30</p>
+          <p>Product Designer <span class="sep">·</span> Kerala, India <span class="sep">·</span> Open to relocating</p>
         </div>
       </header>
 
@@ -315,17 +381,49 @@
       </div>
 
       <div class="indent bio">
-        <p>I design AI-powered products from 0&rarr;1 across iOS, macOS, and web. At Voicenotes, an AI voice and meeting-notes app used by 800k+ people, I shipped the v1 of the iOS app, then built the Mac app from scratch and now lead design across the Mac app, web app, landing pages, and brand. Along the way Voicenotes won a Product Hunt Golden Kitty Award and was featured in Apple's top productivity apps and on Stripe's Black Friday site.</p>
-        <p>At its sister company Buy Me a Coffee, I redesigned the core monetisation flows &mdash; membership, payment modal &mdash; for a platform that processed 2.41M payments and paid 50k+ creators in 2025, up 12% and 17% year over year.</p>
-        <p>Last year I shipped 31 projects across 9 apps and 4 platforms. I love working shoulder to shoulder with founders, prototyping interaction patterns fast (often with AI tools like Claude), and sweating the typography, motion, and detail that make software feel great.</p>
+        <p>I build products people keep open all day.</p>
+        <p>The software I care about isn&rsquo;t used occasionally. It becomes part of how someone works. A notes app. A meeting tool. A dictation app. The best ones get out of the way, so you focus on the work instead of the tool.</p>
+        <p>Today I work at Voicenotes, an AI voice and meeting-notes app used by more than 800,000 people. Over the past year, I designed the foundation for the core flows of the new iOS app, built the native Mac app from scratch, and now design across the Mac app, web app, landing pages, and brand.</p>
+        <p>Voicenotes won a Product Hunt Golden Kitty Award, was featured among Apple&rsquo;s top productivity apps, and appeared on Stripe&rsquo;s Black Friday Cyber Monday website.</p>
+        <p>Before that, I worked on Buy Me a Coffee, redesigning memberships, payments, and growth flows, and improving the creator dashboard experience for a platform that processed 2.41 million payments and paid more than 50,000 creators in 2025.</p>
+        <p>Last year I shipped 31 projects across 9 apps and 4 platforms &mdash; iOS, macOS, Android, and web. I spend most of my time turning rough ideas into working products. I prototype in Figma and code, often with AI tools, then sweat the typography, motion, and detail until it feels obvious.</p>
       </div>
 
-      <section class="stack">
+      <section class="projects-section">
         <div class="row"><span class="marker">&mdash;</span><span>Projects</span></div>
-        <p class="indent"><a href="https://www.reddit.com/r/Voicenotesai/comments/1tusew7/introducing_voicenotes_20_for_mac_meetings/?sort=confidence" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes Mac App, macOS 26 (opens in a new tab)">Voicenotes Mac App (macOS 26)</a></p>
-        <p class="indent2 muted italic">Top user comment: &ldquo;Finally!!! Now I can quit Granola definitely &#128077;&#127998;&rdquo;</p>
-        <p class="indent"><a href="https://apps.apple.com/us/app/voicenotes-ai-notes-meetings/id6483293628" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes iOS App, iOS 26 (opens in a new tab)">Voicenotes iOS App (iOS 26)</a></p>
-        <p class="indent"><a href="#" id="open-projects">Other Projects</a></p>
+
+        <div class="projects-body">
+          <div class="projects-grid">
+
+            <div class="project-col">
+              <div class="project-img">
+                <a class="project-img-link" href="https://www.reddit.com/r/Voicenotesai/comments/1tusew7/introducing_voicenotes_20_for_mac_meetings/?sort=confidence" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes Mac App, macOS 26 (opens in a new tab)">
+                  <img src="Images/voicenotes-mac.png" alt="Voicenotes Mac App" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <div class="project-text">
+                <p><a href="https://www.reddit.com/r/Voicenotesai/comments/1tusew7/introducing_voicenotes_20_for_mac_meetings/?sort=confidence" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes Mac App, macOS 26 (opens in a new tab)">Voicenotes Mac App (macOS 26)</a></p>
+                <p>Designed the native Mac app from 0&rarr;1 around meetings, memos, dictation, team collaboration, and AI workflows. Maintained feature parity with iOS and web apps.</p>
+                <blockquote class="project-quote"><span class="quote-label">Top user comment: </span>&ldquo;Finally!!! Now I can quit Granola definitely &#128077;&#127998;&rdquo;</blockquote>
+              </div>
+            </div>
+
+            <div class="project-col">
+              <div class="project-img">
+                <a class="project-img-link" href="https://apps.apple.com/us/app/voicenotes-ai-notes-meetings/id6483293628" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes iOS App, iOS 26 (opens in a new tab)">
+                  <img src="Images/voicenotes-ios.png" alt="Voicenotes iOS App" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <div class="project-text">
+                <p><a href="https://apps.apple.com/us/app/voicenotes-ai-notes-meetings/id6483293628" target="_blank" rel="noopener noreferrer" aria-label="Voicenotes iOS App, iOS 26 (opens in a new tab)">Voicenotes iOS App (iOS 26)</a></p>
+                <p>Designed the foundation for the core flows of the new native app &mdash; recording, homepage, notes page, search, sharing, Ask AI, and Dynamic Island.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <p><a href="#" id="open-projects">Other Projects</a></p>
+        </div>
       </section>
 
       <div class="row">
@@ -345,9 +443,8 @@
       </div>
 
       <footer class="footer">
-        <p>Published June 19, 2026</p>
-        <p>Built in one evening with Claude Code.</p>
-        <p>Case studies for the iOS and macOS work are coming soon. I&rsquo;ve been busy shipping.</p>
+        <p>Built in one evening with Claude Code. Published June 2026.</p>
+        <p>Detailed case studies for the Mac and iOS work are in progress. I&rsquo;ve been too busy shipping.</p>
       </footer>
 
     </main>
@@ -382,7 +479,7 @@
 
       const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
-      document.querySelectorAll('a:not(.yc-badge-link)').forEach(function (link) {
+      document.querySelectorAll('a:not(.yc-badge-link):not(.project-img-link)').forEach(function (link) {
         link.dataset.hoverText = link.textContent.trim();
         link.style.setProperty('--link-hover-color', window.getComputedStyle(link).color);
       });
